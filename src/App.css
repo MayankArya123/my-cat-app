@@ -1,38 +1,159 @@
-.App {
-  text-align: center;
+.upper-section {
+  height: auto;
+  padding-top: 1rem;
+}
+.row {
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cats-items .info {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  cursor: pointer;
+}
+.cats-items .info:first-child {
+  /* border-top-left-radius:2px solid blue ; */
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.cats-items .info:last-child {
+  /* border-top-right-radius:2px solid blue ; */
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.cats-items .info {
+  margin: 0em 2em;
+  padding: 0.2em 1em;
+  border: 1px solid blue;
+
+}
+.cats-items .info:hover {
+    background:blue;
+    color: white;
+}
+
+.info.active {
+  background: blue;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* middle section  */
+
+.middle-section {
+  margin-top: 3rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.middle-section p {
+  margin-left: 1rem;
+}
+
+.card {
+  width: 60%;
+  margin: auto;
+}
+
+.card img {
+  cursor: pointer;
+  width: 100%;
+  height: 20rem;
+}
+
+.cat-name {
+  margin: 0.5em 1em;
+}
+
+/* image gallery */
+
+.h2 {
+  margin-top: 0rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem !important;
+  font-size: 1.8rem !important;
+}
+
+.image-gallery .h2 {
+  margin: 1rem 1rem;
+}
+
+.image-gallery .cat-pic {
+  width: 80%;
+  height: 16rem;
+  margin: auto;
+  background: blue;
+}
+
+.image-gallery .cat-pic img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.image-gallery .col-4 {
+  margin-bottom: 6rem;
+}
+
+.image-gallery .details-block {
+  margin: auto;
+  width: 80%;
+}
+
+.add-new-btn {
+  margin: 1rem 1rem;
+}
+
+.edit-form-header {
+  display: flex;
+  justify-content: flex-end;
+}
+/* third section */
+
+.add-form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.third-section {
+  margin-top: 1.8rem;
+}
+
+.close-btn {
+  background: #000;
+  color: white;
+  border-radius: 4px;
+}
+
+.close-btn span {
+  font-size: 1.2rem;
+}
+
+.close-btn.edit-cls-btn {
+  background: #000;
+  color: white;
+  border-radius: 4px;
+}
+
+.my-img-div{
+  margin: 3rem 0;
+} 
+
+/* media queries */
+
+@media screen and (max-width: 425px) {
+  .third-section form {
+    padding-left: 1rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .card img {
+    height: 10rem;
   }
 }
+
+@media screen and (min-width: 425px) {
+  .third-section form {
+    padding-left: 1rem;
+  }
+}
+
+/* media queries */
